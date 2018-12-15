@@ -5,5 +5,5 @@ To run this project:
 * Build docker image, run `docker build -t node-docker .`
 * Run the docket image, run `docker run -d -p 9000:3000 node-docker`
 
-> Application serving on your local machine with port 9000
+> Application serving on your local machine.
 > Check your IP of docker to see the running application with port 9000
