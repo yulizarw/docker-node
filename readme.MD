@@ -1,6 +1,6 @@
 # Node.js with docker deployment
 
-[development mode]
+[production mode]
 
 To run this project:
 
