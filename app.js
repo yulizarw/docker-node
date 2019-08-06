@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 
+// for parsing application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }))
+
 app.get('/', (req, res) => {
     var x, y, z
     x = 5
