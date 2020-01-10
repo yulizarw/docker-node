@@ -41,7 +41,7 @@ app.get("/task3", (req, res) => {
     let q = req.query.q
     console.log("First value ", q)
 
-    let result = conditional.isNumber(q)
+    let result = conditional.equal(q)
    
     return res.send(result)
 })
