@@ -12,11 +12,10 @@ app.get('/', (req, res) => {
 
 app.get("/task1", (req, res) => {
     let colors = ["Red", "Blue", "Yellow", "Green"]
-    console.log("Before ", colors)
-
+    console.log("Before ", colors) // hanya menampilkan di terminal
+    
     let result = array_sort.ascending_sort(colors)
-    console.log("After ", result)
-
+    console.log("After ", result) // hanya menampilkan di terminal
     return res.send(result)
 })
 
@@ -42,8 +41,8 @@ app.get("/task3", (req, res) => {
     let q = req.query.q
     console.log("First value ", q)
 
-    let result = conditional.equal(q)
-
+    let result = conditional.isNumber(q)
+   
     return res.send(result)
 })
 
