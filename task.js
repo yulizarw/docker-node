@@ -37,8 +37,20 @@ app.get("/tugas3",(req,res)=>{
 
 //tugas4
 app.post("/tugas4", (req,res)=>{
+    let name = req.body.name
+    console.log("Nama Kamu adalah ", name)
+
+    let hasil = kondisi.objek(name)
+    console.log(hasil)
     
+    let email = req.body.email
+    console.log("Email Kamu adalah ", email)
+
+    let gabungan = name.concat(" dan email kamu adalah ", email)
+    return res.send(`Info Pendaftaran ${hasil} \nBerikut adalah data kamu, nama kamu adalah ${gabungan}`)
+
 })
+
 
 
 
